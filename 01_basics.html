@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Javascript</title>
+    </head>
+    <body>
+        
+        <h1>Operators</h1>
+        
+        <h2>Basic</h2>
+        <p>=    Assign</p>
+        
+        <h2>Mathematic Operators</h2>
+        <p>+    Addition</p>
+        <p>-    Subtraction</p>
+        <p>/    Division</p>
+        <p>*    Mutliplication</p>
+        <p>%    Modulous</p>
+        
+        <h2>Mathematical Short Hand</h2>
+        <p>++   Add one - value = value + 1</p>
+        <p>--   Subtract one</p>
+        <p>+=   Add value - value = value + 10</p>
+        <p>-=   Subtract value</p>
+        <p>*=   Multiply value</p>
+        <p>/=   Divide value</p>
+        <p>%=   Modulous value</p>
+        
+        <h2>String Operator</h2>
+        <p>+    Concatination</p>
+        
+        <h2>Logical Operators</h2>
+        <p>==   Equality</p>
+        <p>!=   Inequality</p>
+        <p>!    NOT</p>
+        <p><    Less Than</p>
+        <p>>    Greater Than</p>
+        <p><=   Less than or equal to</p>
+        <p>>=   Greater than or equal to</p>
+        <p>===  Total Equality</p>
+        <p>!==  Total Inequality</p>
+        
+        <h2>Conjunctive Operators</h2>
+        <p>&&   Logical AND</p>
+        <p>||   Logical OR</p>
+        
+        <h2>Javascript output:</h2>
+        
+        <script type="text/javascript">
+            // Basic Variables and Data Types
+            var username = "Leon Baird";
+            document.write("<p><b>User Name:</b> "+username+"</p>");
+            
+            var userAge = 40;
+            document.write("<p><b>User Age:</b> "+userAge+"</p>");
+            
+            var iLikePies = true;
+            var iRunEveryDay = false;
+            
+            // typeof
+            // isNaN()
+            // isFinite()
+            
+            // parseInt()
+            // parseFloat()
+            // Number()
+            
+            // Arrays
+            var oldWay  = new Array(10, 20, 30, 40);
+            var numbers = [10, 20, 30, 40];
+            var empty = [];
+            
+            // multidimensional arrays
+            var grid = [
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,1,1,1,1,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,9,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0],
+                [0,0,0,0,0,0,0,0,0,0]
+            ];
+            
+            // push, pop, splice, length
+            
+            // Objects
+            var oldMethodPerson = new Object();
+            oldMethodPerson.surname = "Baird";
+            oldMethodPerson.forename = "leon";
+            oldMethodPerson.age = 40;
+            
+            document.write("<p> surname: "+oldMethodPerson.surname+"</p>");
+            
+            //JSON Example
+            var person = {
+                surname: "Baird",
+                forename: "Leon",
+                age: 40
+            };
+            
+            document.write("<p>Forename: "+person.forename+"</p>");
+            
+            // NOTHING!!!
+            // "undefined" - Does not exist
+            // null - Object - nothing - empty - not setup - not used
+            
+            // check object exists
+            var exists = { name: "Bob" };
+            var containsNothing = null;
+            
+            
+            // Statements
+            
+            username = "Jane";
+            var password = "pies";
+            
+            if (username == "Paul" && password == "pies") {
+                document.write("<h2>Paul is Welcome!</h2>");
+            } else if (username == "Paul") {
+                document.write("<h2>Come on Paul, get it together and type your password in correctly!</h2>");
+            } else if (username == "Bob") {
+                document.write("<h2>Bob is not welcome here EVER!</h2>");    
+            } else {
+                document.write("<h2>"+username+" is NOT welcome!</h2>");
+            }
+            
+            var holidayType = "Scabby Pack";
+            
+            switch (holidayType) {
+                case "Luxary":
+                    document.write("<p>Enjoy your luxary holiday!</p>");
+                    break;
+                case "Super Break":
+                    document.write("<p>Very good holiday, mind the buffet however!</p>");
+                    break;
+                case "Scabby Pack":
+                    document.write("<p>You will not notice it's horrible as you will be too drunk</p>");
+                    break;
+                case "Crappy Weekend":
+                    document.write("<p>You will probably want to forgot all about this holiday!</p>");
+                    break;
+                default:
+                    document.write("<p>What holiday pack is this? You will not survive!</p>");
+                    break;
+            }
+            
+            // ternary
+            
+            var userType = "super";
+            
+            var message = userType == "super"
+                    ? "Welcome to all services"
+                    : "Welcome, you have limited services";
+            
+            document.write("<p>"+message+"</p>");
+            
+            // Loops
+            // for, while, do - while
+            
+            // for (initialiser; test; action) { code.. }
+            for (var counter=0; counter <= 1000; counter++) {
+                document.write("<p>Hi there "+counter+"</p>");
+            }
+            
+            // print a list of users
+            
+            var userList = ["Betty", "Frank", "Mavis", "Sue", "Jack", "Evil Sid"];
+            
+            
+            // Traditional For Loop
+            
+            document.write("<ul>");
+            
+            for (var i=0; i < userList.length; i++) {
+                var user = userList[i];
+                document.write("<li id='"+i+"'>"+user+"</li>");
+            }
+            
+            document.write("</ul>");
+            
+            // Fast Enumarator For - In
+            
+            document.write("<ul>");
+            
+            for (var i in userList) {
+                var user = userList[i];
+                document.write("<li id='"+i+"'>"+user+"</li>");
+            }
+            
+            document.write("</ul>");
+            
+            
+            for (var prop in person) {
+                document.write("<p>"+prop+" = "+person[prop]+"</p>");
+            }
+            
+            // While and do While
+            
+            var counterValue = 0;
+            
+            while (counterValue < 10) {
+                document.write("<p>Value is "+counterValue+"</p>");
+                counterValue++;
+            }
+            
+            counterValue = 0;
+            do {
+                document.write("<p>Value is "+counterValue+"</p>");
+                counterValue++;
+            } while (counterValue < 10);
+            
+            // Maths
+            var sroot = Math.sqrt(2000);
+            
+            // Math.round, Math.floor, Math.ceil
+            
+            var rounded = Math.round(44.6);
+            
+            var random = Math.round(Math.random() * 100);
+            
+            document.write("<p>Random number: "+random+"</p>");
+            
+        </script>
+        
+    </body>
+</html>
