@@ -31,9 +31,11 @@ function updateNameList() {
 }
 
 function moveToPanelWithArrow(e) {
-    if (e.which == 37 || e.which == 39) {
+    // check for left and right arrow AND the use is not typing in a name
+    if ((e.which == 37 || e.which == 39) && inputName !== document.activeElement) {
         panelAdd.classList.toggle("hide");
         panelList.classList.toggle("hide");
+        clearForm();
     }
 }
 
