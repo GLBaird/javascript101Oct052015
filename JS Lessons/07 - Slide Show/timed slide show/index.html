@@ -1,0 +1,21 @@
+<html>
+	<head>
+    	<title>Random Image over Time</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="script.js">
+		</script>
+    </head>
+    <body>
+    	<h1>Random images over time</h1>
+        <p><img src="images/front.jpg" width="400" 
+        	height="300" id="randomImage"/></p>
+        <p>This document will randomly change the above image every 2 seconds.</p>
+        <hr/>
+        <form action="#"><p>
+    		<input type="button" id="startButton" value="Start Images" 
+            onClick="startTimer();"/>&nbsp;&nbsp;
+            <input type="button" id="stopButton" value="Stop Images"
+            onClick="stopTimer();"/>
+        </p></form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#666666;
+	margin:10px;
+}
+
+h1 {
+	background-color:#CCCCFF;
+	color:#6699CC;
+	padding:10px;
+}
+
+p{
+	margin-left:30px;
+}
+
+legend {
+	background-color:#ffffff	;
+}
+
+.dataArea{
+	background-color:#eeeeee;
+	margin-left:30px;
+	margin-right:30px;
+	border: solid #aaaaaa 1px;
+}

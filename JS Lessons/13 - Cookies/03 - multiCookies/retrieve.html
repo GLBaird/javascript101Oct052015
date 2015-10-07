@@ -1,0 +1,25 @@
+<html>
+	<body>
+    	<head>
+        	<title>Retrieve Cookie Details</title>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            <script type="text/javascript" src="retrieve.js">
+			</script>
+        </head>
+        <body>
+        	<h1>Retrieve Cookie Data</h1>
+            <p>In this section of the document, we will use inline script to recall the variables made
+            by external script to create the cookies.</p>
+            <hr/>
+            <p>Cookie values are:
+            <script type="text/javascript">
+				document.write("colour = "+findValue("colour")+", border = "+findValue("border")+
+				", background = "+findValue("backGround"));
+			</script>.
+            </p>
+            <div id="styleMe"><p>Now the inside's of this object will be styled<br/>
+            	as set in the cookie.</p>
+            </div>
+        </body>
+    </body>
+</html>

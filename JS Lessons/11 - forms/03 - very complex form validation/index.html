@@ -1,0 +1,68 @@
+<html>
+	<head>
+    	<title>Demo Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="script.js">
+		</script>
+        
+    </head>
+    <body>
+    	<h1>Car Order Form</h1>
+        <form action="#">
+            <p>
+                <div class="label">
+                	<label for="emailAddr">Please enter your email 
+               		address:</label>
+                </div>
+                <input id="emailAddr" type="text" size="30" 
+                class="reqd email" />
+             </p>
+             <p>
+                <div class="label">
+                	<label for="emailAddr2">Re-enter your 
+                    email address:</label>
+                </div>
+                <input id="emailAddr2" type="text" size="30" 
+                class="reqd emailAddr"/>
+                
+            </p><hr/>
+            <p>
+            	<div class="label">
+                	<label for="carColour">Please choose colour:
+                    </label>
+                </div>
+                <select id="carColour" class="reqd">
+                	<option value="" selected="selected">Choose a
+                    colour</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </p>
+            <p>
+            	<div class="label">
+                	Please Choose your options:
+                </div>
+                <label for="sunRoof"><input id="sunRoof" 
+                type="checkbox" value="yes"/>Sunroof (Two 
+                door only)</label>&nbsp;&nbsp;&nbsp;
+                <label for="powerWindows"><input id="powerWindows"
+                type="checkbox" value="yes"/>Power Windows</label>
+            </p>
+            <label for="doors">
+                <div class="label">Number of Doors:</div>
+                <input id="twoD" type="radio" 
+                value="2" name="doors" class="radio"/>Two &nbsp;&nbsp;&nbsp;
+                <input id="fourD" type="radio" class="radio"
+                value="4" name="doors"/>Four
+            </label>
+            <hr/>
+            <p id="submitArea">
+            	<input type="reset"/>&nbsp;
+                <input type="submit" value="Submit"/>
+            </p>
+            <hr/>
+		</form>
+    </body>
+</html>

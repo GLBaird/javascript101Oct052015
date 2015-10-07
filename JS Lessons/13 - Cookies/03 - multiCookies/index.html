@@ -1,0 +1,27 @@
+<html>
+	<head>
+    	<title>Multiple Cookies</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="script.js">
+		</script>
+    </head>
+    <body>
+    	<h1>Multiple Cookies To be Stored</h1>
+        <p>In this example we will be storring more than one cookie on the main page, 
+        then retrieving this information on the second page. The cookies are added to
+        for the entrie domain, and not an individual page.</p>
+        <hr/>
+        <p>Please enter the following information</p>
+        <form action="#">
+            <fieldset class="dataArea"><legend>User Information</legend>
+                <p><label>What is your favourite colour&nbsp;
+                <input type="text" id="col" size="25"/></label></p>
+                <p><label>How thick would you like your borders?&nbsp;
+                <input type="text" id="bord" size="5" /></label></p>
+                <p><label><input type="checkbox" id="back" />&nbsp;
+                Blue background?</label></p>
+            </fieldset>
+            <p><input type="submit" id="submitInfo" value="Store Information"/></p>
+        </form>
+    </body>
+</html>

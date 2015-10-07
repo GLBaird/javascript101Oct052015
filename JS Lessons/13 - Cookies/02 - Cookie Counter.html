@@ -1,0 +1,53 @@
+<html>
+	<head>
+        <title>Cookie Counter</title>
+        <style type="text/css">
+			body{
+				font-family:Geneva, Arial, Helvetica, sans-serif;
+				font-size:14px;
+				margin:0px;
+			}
+			h1{
+				background-color:#CCCCCC;
+				font-size:24px;
+				padding:5px;
+				padding-left:20px;
+			}
+			p{
+				margin-left:20px;
+			}
+		</style>
+        <script type="text/javascript">
+		<!-- blank out old browsers
+			var counterCookie = "";
+			counterCookie = document.cookie;
+			if(counterCookie == "") {
+				counterCookie = createCookie(1);
+			}
+			var visits = Number(counterCookie.split("=")[1]);
+			createCookie(visits+1);
+						
+			function createCookie(vTimes) {
+				var newCookie = "visits="+vTimes+";";
+				var expires = new Date();
+				expires.setMonth(expires.getMonth()+12);
+				newCookie +="path=/;expires="+expires.toGMTString()+";";
+				document.cookie = newCookie;
+				return "visits=1";
+			}
+		//-->
+		</script>
+    </head>
+    <body>
+    	<h1>Cookie Counter</h1>
+        <p>This script will count how many times you have visited this site.  
+        It is not a counter in the general sense, but will count individual 
+        visits from one user.</p>
+        <hr/>
+        <p>You have visited this site:&nbsp;
+		<script type="text/javascript">
+			document.write(visits+" number of times.");
+		</script>
+        </p>    
+    </body>
+</html>

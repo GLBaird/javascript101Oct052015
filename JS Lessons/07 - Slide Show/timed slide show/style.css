@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:14;
+	color:#333333;
+	margin:0;
+}
+
+h1 {
+	background-color:#66aaee;
+	color:#FFFFFF;
+	padding-left:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:24px;
+	margin-bottom:0;
+}
+
+P {
+	margin-left:35px;
+}
+
+forms p {
+	margin-left:20px;
+}
+

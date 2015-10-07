@@ -1,0 +1,24 @@
+<html>
+	<head>
+    	<title>Hiding Javascript from older browsers</title>
+        <script type="text/javascript">
+			<!-- This will hide JS from the old browsers
+			
+			document.write("This header has been added by JS");
+			
+			// -->
+        </script>
+	</head>
+    <body>
+    	<h1>My simple HTML document</h1>
+        <p>This is a very simple HTML document with some javascript
+        	that has been hidden from the view of older browsers
+            by using an HTML Comment.</p>
+        <p>Browsers will ignore all comments between &lt;!-- and --&gt;.
+        	Whereas JS will ignor the following two lines only:</p>
+      	<ul>
+        	<li>&lt;!--</li>
+            <li>// --&gt;</li>
+     	</ul>
+	</body>
+</html>

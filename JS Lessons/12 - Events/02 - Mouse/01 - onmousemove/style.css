@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:#FFFFFF;
+}
+
+#lEye, #rEye {
+	position:absolute;
+	top:100px;
+}
+
+#lDot, #rDot {
+	position:absolute;
+	top:113px;
+}
+
+#lEye {
+	left:100px;
+}
+
+#rEye {
+	left:190px;
+}
+
+#lDot {
+	left:118px;
+}	
+
+#rDot {
+	left:208px;
+}

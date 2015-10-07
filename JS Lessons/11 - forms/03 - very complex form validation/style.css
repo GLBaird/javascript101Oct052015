@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+h1 {
+	font-size:25px;
+	background-color:#ddCCCC;
+	padding:10px;
+	padding-left:20px;
+	color:#661111;
+}
+
+p {
+	margin-top:10px;
+	margin-bottom:5px;
+	margin-left:20px;
+}
+
+div {
+	margin-left:20px;
+}
+
+input.invalid {
+	background-color: #ff9;
+	border: 2px red inset;
+}
+
+label.invalid {
+	color: #ff0000;
+}
+
+#submitArea {
+	display:block;
+	padding-left:450px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0;
+	background-color:#CCCCCC;
+}
+
+.label {
+	float:left;
+	width:230px;
+}

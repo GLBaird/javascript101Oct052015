@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:white;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	margin:50px;
+}
+h1 {
+	background-color:#CCCCCC;
+	padding-left:10px;
+}
+p {
+	margin-left:50px;
+}
+img {
+	border:none;
+}
+a {
+	border:none;
+}	

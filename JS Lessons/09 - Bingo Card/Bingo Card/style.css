@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:white;
+	color:black;
+	font-size:15px;
+	font-family:"Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1, th {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size:30px;
+	display:block;
+	border-left:solid 55px #990000;
+	padding-left:10px;
+	border-bottom:solid 3px #990000;
+	padding-bottom:3px;
+	border-top:solid 3px #990000;
+	padding-top:3px;
+}
+p {
+	margin-left:30px;
+	margin-right:40px;
+}
+table {
+	font-size:20px;
+	margin-left:30px;
+	border-collapse:collapse;
+	background-color:#cccccc;
+}
+th, td{
+	padding:10px;
+	border: 2px	#505050 solid;
+	text-align:center;
+	font-size:24px;
+}
+th {
+	background-color:#ccaaaa;
+}
+a {
+	text-decoration:none;
+	color:#666666;
+}
+a:hover {
+	color:#990000;
+	text-decoration:underline;
+}
+#free {
+	background-color:#000000;
+	color:#ffffff;
+}
+

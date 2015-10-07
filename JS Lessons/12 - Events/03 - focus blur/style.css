@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:white;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+h1 {
+	font-size:24px;
+	background-color:#CCCCCC;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+}
+
+p {
+	margin-left:40px;
+	margin-right:40px;
+}
+
+.label {
+	float:left;
+	width:250px;
+	margin-left:80px;
+}

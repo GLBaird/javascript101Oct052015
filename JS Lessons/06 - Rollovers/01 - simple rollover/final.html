@@ -1,0 +1,20 @@
+<html>
+	<head>
+    	<title>A simple Rollover Effect</title>
+        <link rel="stylesheet"  type="text/css" href="style.css"/>
+    </head>
+    <body>
+    	<h1>Simple Rollover Example</h1>
+        <p>If you try to use the arrow below, without special coded there will be no
+           rollover effects, <br/>which are an important way of symbolising basic
+           interactivity</p>
+        <p>
+        	<a href="#" onMouseOver="document.arrow.src='images/arrow_over.gif'" 
+            onMouseOut="document.arrow.src='images/arrow_up.gif'"
+            onMouseDown="document.arrow.src='images/arrow_down.gif'" 
+            onMouseUp="document.arrow.src='images/arrow_over.gif'">
+        		<img name="arrow" src="images/arrow_up.gif"/>
+        	</a>
+        </p>
+     </body>
+</html>
