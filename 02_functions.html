@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Functions and Closures</title>
+</head>
+
+<body>
+
+    <h1>Functions and closures</h1>
+    
+    <script type="text/javascript">
+
+        var stuff = "Pies";
+        
+        function sayHello() {
+            document.write("<h1>Hi there!</h1>");
+            document.write("<p>You are loggined into something...</p>");
+        }
+        
+        var weird = function() {
+            document.write("<h1>WHY????</h1>");
+            var username = "BOB";
+            var stuff = "Hugh!";
+            document.write("<p>Username = "+username+"</p>");
+            document.write("<p>Stuff = "+stuff+"</p>");
+            stuff = "Magic";
+            
+            function saySomething() {
+                document.write("<p>Something</p>");
+            }
+            
+            saySomething();
+        }
+
+        /**
+         * An example of a function
+         * @param {number} valA
+         * @param {number} valB
+         * @returns {number}
+         */
+        function addNumber(valA, valB) {
+            console.log("Argument list: ", arguments);
+            if (typeof valA == "number" && typeof valB == "number") {
+                return valA + valB;
+            }
+            console.error("addNumber expected two numbers and got: "+typeof valA+" and "+typeof valB);
+            return 0;
+        }
+        
+        
+        addNumber(50, "BOB");
+        
+    </script>
+    
+    <script type="text/javascript" src="03_oop.js"></script>
+    
+</body>
+</html>

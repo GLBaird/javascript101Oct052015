@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Timers</title>
+</head>
+
+<body>
+    
+    <h1>Random Quote Generator</h1>
+    
+    <p>You will get loads of lovely quotes.
+    <button id="toggleButton"
+            onclick="cancelTimer();">
+        Quotes On
+    </button>
+    </p>
+
+    <script type="text/javascript">
+        
+        var quotes = [
+            "Hail the toxic avenger!",
+            "Pies, Pies, why all the pies??",
+            "Bob is very scary, shame he is not real!",
+            "Mary had a little lamb, she strapped it to a pylon, 4000 volts went "
+                +"up its bumb and turns its wool to nylon",
+            "Water water every where!"
+        ];
+        
+        function getRandomQuote() {
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            console.log("Random index generated: "+randomIndex);
+            return randomIndex != 5 ? randomIndex : 4;
+        }
+        
+        function writeRandomQuote() {
+            var index = getRandomQuote();
+            var quote = quotes[index];
+            
+            var newHTML = "<p>"+quote+"</p>";
+            var currentHTML = document.body.innerHTML;
+            
+            // update page
+            document.body.innerHTML = currentHTML + newHTML;
+        }
+        
+        var timer = setInterval(writeRandomQuote, 2000);
+        
+        // pickup button and add click event listener
+        function cancelTimer() {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+                document.getElementById("toggleButton").innerHTML = "Quotes Off";
+            } else {
+                timer = setInterval(writeRandomQuote, 2000);
+                document.getElementById("toggleButton").innerHTML = "Quotes On";
+            }
+        }
+        
+        
+    </script>
+
+</body>
+</html>

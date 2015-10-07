@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dom Experiments</title>
+</head>
+
+<body>
+    
+    <h1>Welcome to the DOM</h1>
+    <p>This will be your home for the next eternity.</p>
+    <div>
+        <p>Hi there</p>
+        <p>Again</p>
+        <p>Fiddling with the body</p>
+        <p><input type="text" placeholder="Enter your name" id="username"></p>
+    </div>
+    <div id="results"> </div>
+    <script type="text/javascript">
+        
+        var div = document.getElementById("results");
+        
+        var h2 = document.createElement("h2");
+        h2.innerHTML = "I was made <i>in</i> Javscript!!!";
+        h2.style.color = "red";
+        h2.style.margin = "1em 0";
+        h2.style.borderBottom = "1px solid red";
+        h2.style.paddingBottom = "0.5em";
+        
+        div.appendChild(h2);
+        
+        var note = document.createElement("p");
+        note.innerHTML = "This is how you dynamically create page content";
+        
+        div.appendChild(note);
+        
+        // add click listener
+        document.body.onmousedown = function(event) {
+            event = event || window.event;
+            event.preventDefault();
+            console.log(event);
+            console.log(this);
+            event.target.style.border = "1px solid red";
+        }
+        
+        console.log(this);
+    </script>
+</body>
+</html>
