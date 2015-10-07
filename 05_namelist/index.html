@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name List</title>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <section id="nameList">
+        <header>
+            <h2>Name List</h2>
+        </header>
+        <ul id="list" class="list-view">
+            <li>Bob</li>
+            <li>John</li>
+            <li>Mary</li>
+        </ul>
+    </section>
+
+    <section id="newName" class="hide">
+        <header>
+            <h2>Add Name</h2>
+        </header>
+        <form id="nameForm">
+            <p>Enter details of person:</p>
+            <input type="text" placeholder="Enter name" id="nameInput">
+            <p class="error">You need to fill in a name!</p>
+            <p>
+                <input type="reset" value="clear">
+                <input type="submit" value="save">
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <button id="panelList" class="icon icon-list">List View</button>
+        <button id="panelAdd"  class="icon icon-plus">Add Name</button>
+    </footer>
+
+</body>
+</html>
