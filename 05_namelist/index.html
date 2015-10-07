@@ -20,14 +20,14 @@
         </ul>
     </section>
 
-    <section id="newName" class="hide">
+    <section id="newName" class="hide" style="display: none;">
         <header>
             <h2>Add Name</h2>
         </header>
         <form id="nameForm">
             <p>Enter details of person:</p>
             <input type="text" placeholder="Enter name" id="nameInput">
-            <p class="error">You need to fill in a name!</p>
+            <p id="errorInfo" class="error">You need to fill in a name!</p>
             <p>
                 <input type="reset" value="clear">
                 <input type="submit" value="save">
@@ -39,6 +39,9 @@
         <button id="panelList" class="icon icon-list">List View</button>
         <button id="panelAdd"  class="icon icon-plus">Add Name</button>
     </footer>
+
+    <!-- Load app logic -->
+    <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
