@@ -87,6 +87,17 @@ ul.list-view {
     border-width: 1px 0 1px 0;
 }
 
+.list-view img {
+    width: 5em;
+    vertical-align: middle;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: 1px solid #999;
+    -webkit-box-shadow:  1px 1px 2px #999;
+    -moz-box-shadow:  1px 1px 2px #999;
+    box-shadow:  1px 1px 2px #999;
+}
+
 input[type="text"] {
     border: 1px solid #999;
     display: block;
@@ -116,3 +127,27 @@ p.error.show {
     margin: 1em 0;
 }
 
+noscript {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    background: rgba(0,0,0, 0.8);
+    z-index: 1000;
+}
+
+noscript div {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    margin-left: -150px;
+    margin-top: -75px;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+}

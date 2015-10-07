@@ -17,16 +17,29 @@ function clearForm() {
     errorInfo.classList.remove("show");
 }
 
+function addDetailsToNameList(details) {
+    // add to list
+    var li = document.createElement("li");
+
+    var img = new Image();
+    img.src = details.avatar;
+    img.alt = "Avatar";
+    li.appendChild(img);
+
+    var text = document.createTextNode(details.name);
+    li.appendChild(text);
+
+    nameList.appendChild(li);
+}
+
 function updateNameList() {
     // empty name list
     nameList.innerHTML = "";
 
     // build name list
     for (var i in names) {
-        var currentName = names[i];
-        var li = document.createElement("li");
-        li.innerHTML = currentName;
-        nameList.appendChild(li);
+        var details = names[i];
+        addDetailsToNameList(details);
     }
 }
 
@@ -106,12 +119,14 @@ function validateAndAddName(e) {
     }
 
     // save name
-    names.push(newName);
+    var details = {
+        name: newName,
+        avatar: getRandomAvatarPath()
+    };
 
-    // add to list
-    var li = document.createElement("li");
-    li.innerHTML = newName;
-    nameList.appendChild(li);
+    names.push(details);
+
+    addDetailsToNameList(details);
 }
 
 // listen to form for submit
